@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "productName": "Hp Mouse",
+      "productPrice": 800,
+      "productColor": "Black",
+      "availableQuantity": 100,
+      "supplier": {
+        "supplierName": "Jayesh",
+        "supplierEmail": "j@123",
+        "supplierAddress": "Warje",
+        "pincode": "411052"
+      }
+    },
+    {
+      "id": 2,
+      "productName": "lenovo laptop",
+      "productPrice": 50000,
+      "productColor": "black",
+      "availableQuantity": 100,
+      "supplier": {
+        "supplierName": "prachi",
+        "supplierEmail": "p2@gmail.com",
+        "supplierAddress": "mumbai",
+        "pincode": 411054
+      }
+    }
+  ]
+}

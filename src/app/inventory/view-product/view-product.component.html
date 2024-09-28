@@ -1,0 +1,37 @@
+<div class="text-center p-3">
+<h3 class="mb-5">Product Details</h3>
+<table align="center">
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Color</th>
+            <th>Product Quantity</th>
+            <th>Supplier Name</th>
+            <th>Supplier Email Id</th>
+            <th>Supplier Address</th>
+            <th>Supplier Pincode</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of viewProduct">
+            <td>{{p.productId}}</td>
+            <td>{{p.productName}}</td>
+            <td>{{p.productPrice}}</td>
+            <td>{{p.productColor}}</td>
+            <td>{{p.availableQuantity}}</td>
+            <td>{{p.supplier.supplierName}}</td>
+            <td>{{p.supplier.supplierEmail}}</td>
+            <td>{{p.supplier.supplierAddress}}</td>
+            <td>{{p.supplier.pincode}}</td>
+            <td>                
+                <button class="btn btn-success" routerLink="/inventory/add"><i class="fa fa-plus"></i></button>
+                <button class="btn btn-primary" (click)="onEdit(p)"><i class="fa fa-pencil" aria-hidden="true"></i></button>                
+                <button class="btn btn-danger" (click)="onDelete(p.productId)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>

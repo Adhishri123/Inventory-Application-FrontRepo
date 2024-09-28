@@ -1,0 +1,29 @@
+<div class="text-center p-3">
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()" >
+  <h3>Add Product Details</h3>
+      <!-- <input type="number" placeholder="Enter product id" formControlName="id">
+      <pre></pre> -->
+      <input type="text" placeholder="Enter product name" formControlName="productName">
+      <pre></pre>
+      <input type="number" placeholder="Enter product price" formControlName="productPrice">
+      <pre></pre>
+      <input type="text" placeholder="Enter product color" formControlName="productColor">
+      <pre></pre>
+      <input type="number" placeholder="Enter product quantity" formControlName="availableQuantity">
+      <pre></pre>
+      <div formGroupName="supplier">
+
+        <input type="text" placeholder="Enter supplier name" formControlName="supplierName">
+        <pre></pre>
+        <input type="email" placeholder="Enter supplier email" formControlName="supplierEmail">
+        <pre></pre>
+        <input type="text" placeholder="Enter supplier address" formControlName="supplierAddress">
+        <pre></pre>
+        <input type="number" placeholder="Enter supplier pincode" formControlName="pincode">
+        <pre></pre>
+
+      </div>
+      <button type="submit" class="btn btn-success w-40 m-2">SAVE</button>
+      <button type="reset" class="btn btn-success w-40 ms-5 m-2">CLEAR ALL</button>
+</form>
+</div>

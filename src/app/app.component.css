@@ -1,0 +1,13 @@
+.d1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.btn1{
+    background-color: rgb(67, 185, 231);
+    margin-bottom: 10px;
+}
+.btn2{
+    background-color: rgb(67, 185, 231);
+    margin-bottom: 10px;
+}
